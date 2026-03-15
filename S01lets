@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Starting acme process on boot up
+mount -o "remount,exec" /var
+/var/acme/renew.sh &

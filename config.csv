@@ -1,0 +1,6 @@
+# Main web services
+OWA;owa.example.com,exchange.example.com
+vpn;vpn.example.com
+
+# Disabled for now
+# portal;portal.example.com
