@@ -52,7 +52,7 @@ Boot --> S01lets --> renew.sh (infinite loop)
 2. Run the one-liner installer:
 
 ```sh
-sh -c "$(curl https://raw.githubusercontent.com/kilimcininkoroglu/sophos-xgs-letsencrypt/main/setup.sh)"
+sh -c "$(curl https://raw.githubusercontent.com/KilimcininKorOglu/sophos-fw-letsencrypt/main/setup.sh)"
 ```
 
 The setup script will:
@@ -115,7 +115,7 @@ Upload the `.pem` and `.key` files via the web interface. Subsequent renewals wi
 After upgrading the XGS firmware, the `/var/acme` directory and the init script at `/etc/rc.d/S01lets` may be removed. Re-run the setup script to restore the installation:
 
 ```sh
-sh -c "$(curl https://raw.githubusercontent.com/kilimcininkoroglu/sophos-xgs-letsencrypt/main/setup.sh)"
+sh -c "$(curl https://raw.githubusercontent.com/KilimcininKorOglu/sophos-fw-letsencrypt/main/setup.sh)"
 ```
 
 Your account registration and `config.csv` will be preserved if they still exist; otherwise, reconfigure them.

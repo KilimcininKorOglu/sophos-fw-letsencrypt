@@ -1,5 +1,5 @@
 #!/bin/sh
-# setup.sh -- One-time installer for sophos-xgs-letsencrypt
+# setup.sh -- One-time installer for sophos-fw-letsencrypt
 # Downloads acme.sh, registers a Let's Encrypt account, and installs
 # the boot service at /etc/rc.d/S01lets.
 # Safe to re-run: idempotent for all operations.
@@ -7,8 +7,8 @@
 # ---------------------------------------------------------------------------
 # Constants
 # ---------------------------------------------------------------------------
-REPO_OWNER="kilimcininkoroglu"
-REPO_NAME="sophos-xgs-letsencrypt"
+REPO_OWNER="KilimcininKorOglu"
+REPO_NAME="sophos-fw-letsencrypt"
 REPO_BRANCH="main"
 BASE_URL="https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/${REPO_BRANCH}"
 
@@ -264,7 +264,7 @@ main() {
         exit 1
     fi
 
-    log INFO "=== Installed sophos-xgs-letsencrypt ==="
+    log INFO "=== Installed sophos-fw-letsencrypt ==="
 }
 
 main
