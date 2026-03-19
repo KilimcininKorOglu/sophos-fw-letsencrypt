@@ -7,6 +7,7 @@
 # ---------------------------------------------------------------------------
 # Constants
 # ---------------------------------------------------------------------------
+VERSION="1.0.0"
 REPO_OWNER="KilimcininKorOglu"
 REPO_NAME="sophos-fw-letsencrypt"
 REPO_BRANCH="main"
@@ -225,7 +226,7 @@ installBootService() {
 # Main
 # ---------------------------------------------------------------------------
 main() {
-    log INFO "=== setup.sh starting (PID: $$) ==="
+    log INFO "=== setup.sh v${VERSION} starting (PID: $$) ==="
 
     if ! preflightChecks; then
         log ERROR "Pre-flight checks failed, exiting"

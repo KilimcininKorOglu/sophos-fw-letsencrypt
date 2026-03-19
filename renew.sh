@@ -5,6 +5,7 @@
 # ---------------------------------------------------------------------------
 # Constants
 # ---------------------------------------------------------------------------
+VERSION="1.0.0"
 CONF=/var/acme
 HOME=/var/acme
 LOG_FILE=/var/acme/renew.log
@@ -361,7 +362,7 @@ signalAwareSleep() {
 # Main
 # ---------------------------------------------------------------------------
 main() {
-    log INFO "=== renew.sh starting (PID: $$) ==="
+    log INFO "=== renew.sh v${VERSION} starting (PID: $$) ==="
 
     if ! preflightChecks; then
         log ERROR "Pre-flight checks failed, exiting"
